@@ -1,0 +1,140 @@
+<!--
+    Seçoes comuns do documento HTML
+
+    - cabeçalho <header>
+    - navegaçao <nav>
+    - conteudo principal <main>
+    - barra lateral <aside>
+    - rodapé <footer>
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantico</title>
+</head>
+<body>
+    <header>
+        <!--
+            - Onde utilizar?
+            - Quando no inicio da página, é visto como global
+            - Pode ser usado em outros elementos semanticos, como article,
+            section
+            - Multiplos headers
+            - Não possui atributos especificos
+        -->
+        <div>
+            <strong>Construtores & Cia.</strong>
+            <span>Um portal de construção</span>
+        </div>
+        <nav>
+            <!--
+                <nav></nav>
+
+                - Onde e por que utilizar?
+                - Normalmente dentro do header
+                c
+            -->
+            <ul>
+                <li>Homepage</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--
+            - contaudo unico na página
+            - dentro do body
+            - usado apenas uma vez
+            - não possui atributos especificos, somente globais
+        -->
+        Conteudo principal
+
+        <article>
+            <!--
+                - não possui atributos especificos, somente globais
+                - post relacionados
+                - pode se repetir varias vezes na pagina
+                - post de um blog, artigo de uma revista
+            -->
+            <h1>Como construir uma casa</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Non sit voluptas necessitatibus omnis unde enim labore repellat alias eligendi cum, molestiae cupiditate amet dolorem nobis harum culpa in tempora facilis!
+            </p>
+
+            <section>
+                <!--
+                    - Seções na página
+                    - Geralmente coloca-se um titulo e conteúdo
+                    - se houver repetição, usar article, e colocar <section> dentro do article
+                -->
+            </section>
+
+
+
+            <ul>
+                <li>Tamanho do terreno: 302 m/2</li>
+                <li>Area a ser construida: aproximadamente 120m/2</li>
+                <li>Padrão de construção: não sei</li>
+                
+            </ul>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus reprehenderit nihil, cumque sit officiis quam numquam cupiditate. Sint fugit quae ea blanditiis architecto esse consequuntur voluptatibus mollitia est. Dolore, blanditiis!
+            </p>
+
+            <aside>
+                <h3>Glossário</h3>
+                <dl>
+                    <dt>Terraplanagem</dt>
+                    <dd>É o processo de terraplanar. Se a Terra é plana, não precisaria fazer isso.</dd>
+                </dl>
+            </aside>
+
+        </article>
+
+    </main>
+
+    <hr>
+
+    <aside>
+        <!--
+            - contaúdos levemente relacionados ao conteudo principal
+            - explicações
+            - glossario
+            - links extras
+            - biografia do autor
+            - informações de perfil
+            - atributos: apenas globais
+        -->
+        <h3>Links relacionados</h3>
+        <ul>
+            <li><a href="">Terraplanar com sucesso</a></li>
+            <li><a href="">10 passos para construir um castelo</a></li>
+            <li><a href="">Ele construiu um piscina no deserto e olha no que deu</a></li>
+        </ul>
+    </aside>
+
+    <aside>
+        <strong>Oferecimento: Ofere Cimentos</strong>
+    </aside>
+
+    <hr>
+
+    <footer>
+        <!--
+            - Geralmente no final da página
+            - Informações ddo autor, copyright, contato, sitemap, voltar ao top
+            - atributos: globais
+        -->
+        <em>Copyright Carlos - 2022</em>
+    </footer>
+
+</body>
+</html>
