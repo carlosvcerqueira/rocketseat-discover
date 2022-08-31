@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 4rem;
+    background-color: dodgerblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: .8rem;
+    align-items: center;   
+}
+
+ul li:last-child {
+    background-color: black;
+    color: white;
+    padding: .8rem;   
+}
